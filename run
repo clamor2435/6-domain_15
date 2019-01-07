@@ -1,0 +1,7 @@
+option solver cplexamp;
+model EON_intra.mod;
+
+data SD100.dat6.dat;
+solve;
+option omit_zero_rows 1, display_1col 1000;
+display Index, _solve_time>> IntraSDS.txt ;

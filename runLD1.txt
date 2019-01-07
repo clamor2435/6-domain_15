@@ -1,0 +1,3 @@
+option solver cplexamp;
+model EON_LD.mod
+
